@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="amn-uL-ujC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="xfm-U1-3Tp">
+            <objects>
+                <navigationController id="amn-uL-ujC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tka-JA-d66">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jBA-Gr-kNT" kind="relationship" relationship="rootViewController" id="E9y-I1-Pgj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5dP-uH-ZCp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-252" y="131"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="AW2-kq-dXT">
+            <objects>
+                <viewController id="0na-kS-MCg" customClass="TestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UeB-cS-nbO"/>
+                        <viewControllerLayoutGuide type="bottom" id="ohn-QH-MxE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KNV-kd-spc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Kx-7Y-6LS">
+                                <rect key="frame" x="28" y="93" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Kb8-nD-noR"/>
+                                    <constraint firstAttribute="width" constant="100" id="vNL-cC-Lwl"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Wqd-dI-A1b">
+                                <rect key="frame" x="67" y="333" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.35520435430000002" green="1" blue="0.75427550649999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Kx-7Y-6LS" firstAttribute="top" secondItem="UeB-cS-nbO" secondAttribute="bottom" constant="20" id="OTY-tf-zJz"/>
+                            <constraint firstItem="4Kx-7Y-6LS" firstAttribute="leading" secondItem="KNV-kd-spc" secondAttribute="leadingMargin" constant="20" id="PcF-QM-GeJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iXm-08-sZq"/>
+                    <connections>
+                        <outlet property="imageView" destination="4Kx-7Y-6LS" id="zke-lL-7WQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j5v-QJ-EDr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-252" y="818"/>
+        </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="i25-hI-IgY">
+            <objects>
+                <viewController id="4xb-zF-t1v" customClass="TimerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="agf-uY-iY3"/>
+                        <viewControllerLayoutGuide type="bottom" id="MQL-hq-jca"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fJh-Xs-7kP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nrq-HW-idQ">
+                                <rect key="frame" x="67" y="28" width="240" height="409"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.35520435430000002" green="1" blue="0.75427550649999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TSz-Yp-23G"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EA6-8s-tF0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.199999999999999" y="-627.4362818590705"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dLQ-SD-oEP">
+            <objects>
+                <viewController id="jBA-Gr-kNT" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="86X-MV-oTa"/>
+                        <viewControllerLayoutGuide type="bottom" id="k0b-zG-3hw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gdl-7L-ELR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4i0-Ty-2k4">
+                                <rect key="frame" x="120" y="118" width="134" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Timer"/>
+                                <connections>
+                                    <segue destination="4xb-zF-t1v" kind="push" id="1ka-1q-f3P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIY-or-jvJ">
+                                <rect key="frame" x="120" y="215" width="142" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Source"/>
+                                <connections>
+                                    <segue destination="oFL-dj-F6D" kind="push" id="wfK-ea-rJM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYZ-Bz-vge">
+                                <rect key="frame" x="159" y="294" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Observer"/>
+                                <connections>
+                                    <segue destination="P74-fY-Qry" kind="push" id="dn6-a9-zWX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNQ-Kz-bh0">
+                                <rect key="frame" x="116" y="380" width="151" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Test"/>
+                                <connections>
+                                    <segue destination="0na-kS-MCg" kind="push" id="bJi-vk-RsS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7C4-wi-qqF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c1i-u3-8po" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="400.80000000000001" y="56.221889055472268"/>
+        </scene>
+        <!--Observer View Controller-->
+        <scene sceneID="qUf-tn-7Ub">
+            <objects>
+                <viewController id="P74-fY-Qry" customClass="ObserverViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HQH-Od-RSA"/>
+                        <viewControllerLayoutGuide type="bottom" id="YpW-Rt-Szb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NOV-cY-Qwx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KTh-CZ-xI8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6rq-JG-YJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="401" y="848"/>
+        </scene>
+        <!--Source View Controller-->
+        <scene sceneID="Faz-Ox-RTb">
+            <objects>
+                <viewController id="oFL-dj-F6D" customClass="SourceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ee5-gh-3uh"/>
+                        <viewControllerLayoutGuide type="bottom" id="vy6-3P-lhQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZsS-Mp-js8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJM-su-cis">
+                                <rect key="frame" x="32" y="137" width="106" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="click:" destination="oFL-dj-F6D" eventType="touchUpInside" id="yrp-TR-SHh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Co6-gg-dfp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R7O-FH-Rpq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1226.4000000000001" y="111.99400299850076"/>
+        </scene>
+    </scenes>
+</document>
