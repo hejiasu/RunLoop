@@ -26,7 +26,6 @@
     CFRunLoopGetMain();
     //获取主线程的RunLoop
     CFRunLoopGetCurrent();
-
 }
 
 

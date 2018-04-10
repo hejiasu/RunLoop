@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE0EAD0D1E7C4386007171E4 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0EAD0C1E7C4386007171E4 /* TestViewController.m */; };
-		CE0EAD161E7CB4BE007171E4 /* SSThread.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0EAD151E7CB4BE007171E4 /* SSThread.m */; };
 		CE163D3B1E7B7BAB004BA4D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE163D3A1E7B7BAB004BA4D4 /* main.m */; };
 		CE163D3E1E7B7BAB004BA4D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE163D3D1E7B7BAB004BA4D4 /* AppDelegate.m */; };
 		CE163D411E7B7BAB004BA4D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE163D401E7B7BAB004BA4D4 /* ViewController.m */; };
@@ -18,13 +16,11 @@
 		CE163D521E7BC73A004BA4D4 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE163D511E7BC739004BA4D4 /* TimerViewController.m */; };
 		CE163D551E7BCD46004BA4D4 /* SourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE163D541E7BCD46004BA4D4 /* SourceViewController.m */; };
 		CE163D581E7BD8C2004BA4D4 /* ObserverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE163D571E7BD8C2004BA4D4 /* ObserverViewController.m */; };
+		CE73691F207C86BC00935D6F /* ShowImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE73691E207C86BC00935D6F /* ShowImageViewController.m */; };
+		CE736922207C961A00935D6F /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE736921207C961A00935D6F /* ThreadViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE0EAD0B1E7C4386007171E4 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		CE0EAD0C1E7C4386007171E4 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		CE0EAD141E7CB4BE007171E4 /* SSThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSThread.h; sourceTree = "<group>"; };
-		CE0EAD151E7CB4BE007171E4 /* SSThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSThread.m; sourceTree = "<group>"; };
 		CE163D361E7B7BAB004BA4D4 /* RunLoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunLoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE163D3A1E7B7BAB004BA4D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE163D3C1E7B7BAB004BA4D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,6 +37,10 @@
 		CE163D541E7BCD46004BA4D4 /* SourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourceViewController.m; sourceTree = "<group>"; };
 		CE163D561E7BD8C2004BA4D4 /* ObserverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObserverViewController.h; sourceTree = "<group>"; };
 		CE163D571E7BD8C2004BA4D4 /* ObserverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObserverViewController.m; sourceTree = "<group>"; };
+		CE73691D207C86BC00935D6F /* ShowImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowImageViewController.h; sourceTree = "<group>"; };
+		CE73691E207C86BC00935D6F /* ShowImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowImageViewController.m; sourceTree = "<group>"; };
+		CE736920207C961A00935D6F /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
+		CE736921207C961A00935D6F /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +83,10 @@
 				CE163D541E7BCD46004BA4D4 /* SourceViewController.m */,
 				CE163D561E7BD8C2004BA4D4 /* ObserverViewController.h */,
 				CE163D571E7BD8C2004BA4D4 /* ObserverViewController.m */,
-				CE0EAD0B1E7C4386007171E4 /* TestViewController.h */,
-				CE0EAD0C1E7C4386007171E4 /* TestViewController.m */,
-				CE0EAD141E7CB4BE007171E4 /* SSThread.h */,
-				CE0EAD151E7CB4BE007171E4 /* SSThread.m */,
+				CE73691D207C86BC00935D6F /* ShowImageViewController.h */,
+				CE73691E207C86BC00935D6F /* ShowImageViewController.m */,
+				CE736920207C961A00935D6F /* ThreadViewController.h */,
+				CE736921207C961A00935D6F /* ThreadViewController.m */,
 				CE163D421E7B7BAB004BA4D4 /* Main.storyboard */,
 				CE163D451E7B7BAB004BA4D4 /* Assets.xcassets */,
 				CE163D471E7B7BAB004BA4D4 /* LaunchScreen.storyboard */,
@@ -178,12 +178,12 @@
 			files = (
 				CE163D581E7BD8C2004BA4D4 /* ObserverViewController.m in Sources */,
 				CE163D521E7BC73A004BA4D4 /* TimerViewController.m in Sources */,
-				CE0EAD0D1E7C4386007171E4 /* TestViewController.m in Sources */,
-				CE0EAD161E7CB4BE007171E4 /* SSThread.m in Sources */,
+				CE736922207C961A00935D6F /* ThreadViewController.m in Sources */,
 				CE163D551E7BCD46004BA4D4 /* SourceViewController.m in Sources */,
 				CE163D411E7B7BAB004BA4D4 /* ViewController.m in Sources */,
 				CE163D3E1E7B7BAB004BA4D4 /* AppDelegate.m in Sources */,
 				CE163D3B1E7B7BAB004BA4D4 /* main.m in Sources */,
+				CE73691F207C86BC00935D6F /* ShowImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

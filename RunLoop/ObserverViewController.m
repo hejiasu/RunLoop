@@ -39,7 +39,7 @@
     /*
       添加Observer
       参数1：默认值
-      参数2：监听活动
+      参数2：监听活动（这里监听了kCFRunLoopAllActivities）
       参数3：重复
       参数4：0
     */
@@ -48,8 +48,8 @@
     });
     
     /*
-    添加观察者，监听Runloop的状态
-    参数1：runloop
+    添加观察者，监听Runloop的在kCFRunLoopDefaultMode模式下的状态
+    参数1：当前runloop
     参数2：监听者
     参数3：模式
     */
