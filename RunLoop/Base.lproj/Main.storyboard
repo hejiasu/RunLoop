@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="amn-uL-ujC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="amn-uL-ujC">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -82,21 +82,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nrq-HW-idQ">
-                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <rect key="frame" x="46" y="94" width="283" height="200"/>
                                 <color key="backgroundColor" red="0.35520435430000002" green="1" blue="0.75427550649999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="FYh-Go-2OM"/>
-                                    <constraint firstAttribute="height" constant="200" id="MID-nk-fXC"/>
+                                    <constraint firstAttribute="height" constant="200" id="P8T-5K-7B0"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDY-F5-6Cn">
+                                <rect key="frame" x="46" y="374" width="283" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.48252358527782224" blue="0.29073156954926993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9uP-18-FSz"/>
+                                </constraints>
+                                <state key="normal" title="scheduledTimer"/>
+                                <connections>
+                                    <action selector="scheduledTimer:" destination="4xb-zF-t1v" eventType="touchUpInside" id="gaE-Bx-Hzb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyt-Xf-Epo">
+                                <rect key="frame" x="46" y="434" width="283" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.48252358527782224" blue="0.29073156954926993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wh6-Mo-Ts7"/>
+                                </constraints>
+                                <state key="normal" title="timerWith"/>
+                                <connections>
+                                    <action selector="timerWith:" destination="4xb-zF-t1v" eventType="touchUpInside" id="shi-C3-YZd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="nrq-HW-idQ" firstAttribute="centerY" secondItem="fJh-Xs-7kP" secondAttribute="centerY" id="d0s-wG-kK0"/>
-                            <constraint firstItem="nrq-HW-idQ" firstAttribute="centerX" secondItem="fJh-Xs-7kP" secondAttribute="centerX" id="hRd-Yd-m2x"/>
+                            <constraint firstItem="nrq-HW-idQ" firstAttribute="leading" secondItem="fJh-Xs-7kP" secondAttribute="leadingMargin" constant="30" id="53B-NM-yIT"/>
+                            <constraint firstItem="tyt-Xf-Epo" firstAttribute="top" secondItem="EDY-F5-6Cn" secondAttribute="bottom" constant="30" id="L6G-bI-zGU"/>
+                            <constraint firstItem="tyt-Xf-Epo" firstAttribute="leading" secondItem="fJh-Xs-7kP" secondAttribute="leadingMargin" constant="30" id="UuH-Fx-6Bb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nrq-HW-idQ" secondAttribute="trailing" constant="30" id="dAr-Ck-0d1"/>
+                            <constraint firstItem="EDY-F5-6Cn" firstAttribute="top" secondItem="nrq-HW-idQ" secondAttribute="bottom" constant="80" id="eTg-SY-C0f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EDY-F5-6Cn" secondAttribute="trailing" constant="30" id="h1m-hb-9IC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tyt-Xf-Epo" secondAttribute="trailing" constant="30" id="rbJ-sd-uzD"/>
+                            <constraint firstItem="EDY-F5-6Cn" firstAttribute="leading" secondItem="fJh-Xs-7kP" secondAttribute="leadingMargin" constant="30" id="sPb-s1-Ica"/>
+                            <constraint firstItem="nrq-HW-idQ" firstAttribute="top" secondItem="agf-uY-iY3" secondAttribute="bottom" constant="30" id="weO-as-lDM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TSz-Yp-23G"/>

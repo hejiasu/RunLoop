@@ -23,6 +23,7 @@
 
 
 -(void)play1{
+    //NSThred创建额子线程需要手动管理内存
     @autoreleasepool{
         
         //    NSLog(@"runloop---start--");

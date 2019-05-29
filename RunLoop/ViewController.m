@@ -17,15 +17,15 @@
 - (void)viewDidLoad {
    
     //获取当前线程的RunLoop
-    [NSRunLoop currentRunLoop];
-    //获取主线程的RunLoop
-    [NSRunLoop mainRunLoop];
-    
-    
-    //获取当前线程的RunLoop
-    CFRunLoopGetMain();
-    //获取主线程的RunLoop
-    CFRunLoopGetCurrent();
+//    NSLog(@"%@",[NSRunLoop currentRunLoop]);
+//    //获取主线程的RunLoop
+//    NSLog(@"%@",[NSRunLoop mainRunLoop]);
+//    
+//    
+//    //获取当前线程的RunLoop
+//    NSLog(@"%@",CFRunLoopGetMain());
+//    //获取主线程的RunLoop
+//    NSLog(@"%@",CFRunLoopGetCurrent());
 }
 
 
